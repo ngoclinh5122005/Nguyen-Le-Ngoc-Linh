@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sách bài tập HTML - Nguyễn Lê Ngọc Linh</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f8f8ff, #eaf4ff);
+            margin: 40px;
+            color: #222;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        /* ====== KHUNG CHÍNH CHIA 2 CỘT ====== */
+        .container {
+            display: flex;
+            gap: 40px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        /* ====== CỘT TRÁI: THÔNG TIN SINH VIÊN ====== */
+        .info {
+            flex: 1;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            height: fit-content;
+            text-align: left;
+        }
+
+        .info h2 {
+            text-align: center;
+            color: #0056b3;
+            margin-bottom: 15px;
+        }
+
+        .info p {
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        .social a {
+            color: #1877f2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .social a:hover {
+            color: #ff6600;
+        }
+
+        /* ====== HÌNH ẢNH ====== */
+        .info img {
+            display: block;
+            margin: 20px auto 0 auto;
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.2);
+        }
+
+        /* ====== CỘT PHẢI: DANH SÁCH BÀI ====== */
+        .exercise-section {
+            flex: 1.2;
+        }
+
+        .exercise-section h1 {
+            text-align: center;
+            color: #0056b3;
+            margin-bottom: 10px;
+        }
+
+        .exercise-section h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        li {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        a {
+            text-decoration: none;
+            color: #0056b3;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        a:hover {
+            color: #ff6600;
+        }
+
+        /* ====== RESPONSIVE ====== */
+        @media (max-width: 850px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- CỘT TRÁI: THÔNG TIN SINH VIÊN -->
+        <div class="info">
+            <h2>Thông tin sinh viên</h2>
+            <p><strong>Họ tên:</strong> Nguyễn Lê Ngọc Linh</p>
+            <p><strong>Năm sinh:</strong> 05/12/2005</p>
+            <p><strong>Trường:</strong> Đại học Kinh tế TP.HCM (UEH)</p>
+            <p><strong>Địa chỉ:</strong> 279 Nguyễn Tri Phương, phường 8, quận 10, TP.HCM</p>
+            <p class="social"><strong>Social Link:</strong> 
+                <a href="https://www.facebook.com/ngoclinh512005/?locale=vi_VN" target="_blank">
+                    Facebook cá nhân
+                </a>
+            </p>
+
+            <!-- THÊM HÌNH Ở ĐÂY -->
+           <img src="ponyo.jpeg" alt="Ảnh nhân vật dễ thương" width="200">
+        <!-- CỘT PHẢI: DANH SÁCH BÀI TẬP -->
+        <div class="exercise-section">
+            <h1>DANH SÁCH LIÊN KẾT BÀI TẬP HTML</h1>
+            <h2>Nguyễn Lê Ngọc Linh</h2>
+
+            <ul>
+                <li><a href="bai1.html">Bài 1</a></li>
+                <li><a href="bai2.html">Bài 2</a></li>
+                <li><a href="bai3.html">Bài 3</a></li>
+                <li><a href="bai4.html">Bài 4</a></li>
+                <li><a href="bai5.html">Bài 5</a></li>
+                <li><a href="bai6.html">Bài 6</a></li>
+                <li><a href="bai7.html">Bài 7</a></li>
+                <li><a href="bai8.html">Bài 8</a></li>
+                <li><a href="bai9.html">Bài 9</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
